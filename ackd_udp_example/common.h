@@ -1,0 +1,10 @@
+//
+// Created by Eugenio Moro on 26/10/22.
+//
+
+#ifndef PROTOBUF_CPP_EXAMPLES_COMMON_H
+#define PROTOBUF_CPP_EXAMPLES_COMMON_H
+
+#endif //PROTOBUF_CPP_EXAMPLES_COMMON_H
+
+#define MAX_SEGMENT_SIZE 8

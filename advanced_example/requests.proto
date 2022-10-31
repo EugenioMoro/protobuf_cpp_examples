@@ -1,0 +1,39 @@
+syntax="proto3";
+
+message MasterRequest{
+  oneof request{
+    PingRequest ping_request=1;
+    IfaceListRequest iface_list_request=2;
+  }
+}
+
+message PingRequest{
+  string target = 1;
+  int32 count = 2;
+}
+
+message PingResponse{
+  string target=1;
+  bool success=2;
+  double min=3;
+  double avg=4;
+  double max=5;
+}
+
+enum IpVersions{
+  ipv4=0;
+  ipv6=1;
+}
+message Iface{
+  string name=1;
+  string address=2;
+  IpVersions ip_version=3;
+}
+
+message IfaceListRequest{
+  IpVersions ip_version=1;
+}
+
+message IfaceListResposne{
+  repeated Iface interfaces=1;
+}

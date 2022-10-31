@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message datagram{
+  int32 segment_no=1;
+  string data=2;
+  bool more_segments=3;
+}
+
+message ack{
+  int32 segment_no=1;
+  bool ackd=2;
+}

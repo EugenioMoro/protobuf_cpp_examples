@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Message{
+  uint32 header = 1;
+  int64 payload_length = 2;
+  string payload = 3;
+}
