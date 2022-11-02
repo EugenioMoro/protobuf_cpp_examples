@@ -2,7 +2,9 @@
 // Created by Eugenio Moro on 26/10/22.
 //
 
-#include "client.h"
+#include "../UDP_socket.h"
+#include "datagram.pb.h"
+#include "common.h"
 
 #define DATA_TO_SEND "This is quite a long string, it will be divided into segments because the wire cannot support so much data all at once"
 

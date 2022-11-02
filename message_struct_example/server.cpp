@@ -2,7 +2,8 @@
 // Created by Eugenio Moro on 25/10/22.
 //
 
-#include "server.h"
+#include "../UDP_socket.h"
+#include "./message.h"
 
 #define PRINT_PAYLOAD 0
 
@@ -21,7 +22,7 @@ int main(){
         if(PRINT_PAYLOAD) {
             std::cout << "\tpayload: " << msg->payload << std::endl;
         }
-        free(msg);
-        free(recv_buf);
+        
+        delete msg;
     };
 }
