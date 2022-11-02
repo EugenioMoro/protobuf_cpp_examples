@@ -2,7 +2,8 @@
 // Created by Eugenio Moro on 26/10/22.
 //
 
-#include "client.h"
+#include "../UDP_socket.h"
+#include "message.pb.h"
 
 #define PAYLOAD "this is our payload, use it well"
 #define HEADER 'k'

@@ -2,7 +2,9 @@
 // Created by Eugenio Moro on 26/10/22.
 //
 
-#include "server.h"
+#include "../UDP_socket.h"
+#include "datagram.pb.h"
+
 #define RX_FAIL_PROB 10
 #define RX_FAILED (rand()%100<RX_FAIL_PROB)
 

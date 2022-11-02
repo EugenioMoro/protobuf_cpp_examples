@@ -23,4 +23,12 @@ mkdir build && cd build
 cmake ..
 make
 ```
-All examples tested on MacOS 12.4, should work on Linux (windows not supported). 
+All examples tested on MacOS 12.4 and Ubuntu 20.4 (Windows not supported). 
+
+You can also use the Dockerfile to build the environment with all the prerequisites and this repository
+```
+docker build -t netp-protobuf:1.0 - < Dockerfile
+docker run -dit --name netp-protobuf netp-protobuf:1.0
+docker exec -it netp-protobuf bash
+```
+A prebuilt image is also available on [Docker Hub](https://hub.docker.com/repository/docker/mychele/netp-protobuf).

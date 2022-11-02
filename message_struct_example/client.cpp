@@ -2,7 +2,8 @@
 // Created by Eugenio Moro on 25/10/22.
 //
 
-#include "client.h"
+#include "../UDP_socket.h"
+#include "./message.h"
 
 #define PAYLOAD "this is our payload"
 #define HEADER 'k'
@@ -24,4 +25,6 @@ int main(){
     // send message
     std::size_t sent_len = socket.send((char*) msg, sizeof(msg));
     std::cout << "Sent " << sent_len << " bytes" << std::endl;
+
+    delete msg;
 }

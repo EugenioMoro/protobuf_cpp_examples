@@ -2,7 +2,8 @@
 // Created by Eugenio Moro on 26/10/22.
 //
 
-#include "server.h"
+#include "../UDP_socket.h"
+#include "message.pb.h"
 
 int main(){
     std::cout << "Starting server\n";

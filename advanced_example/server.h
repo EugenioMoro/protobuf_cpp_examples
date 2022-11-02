@@ -5,8 +5,6 @@
 #ifndef PROTOBUF_CPP_EXAMPLES_SERVER_H
 #define PROTOBUF_CPP_EXAMPLES_SERVER_H
 
-#endif //PROTOBUF_CPP_EXAMPLES_SERVER_H
-
 #include "common.h"
 #include "../UDP_socket.h"
 #include "requests.pb.h"
@@ -26,3 +24,5 @@ PingResponse handle_ping_request(PingRequest ping_request);
 IfaceListResposne handle_iface_request(IfaceListRequest req);
 std::string exec(const char* cmd);
 std::string build_ping_cmd(std::string target, int count);
+
+#endif //PROTOBUF_CPP_EXAMPLES_SERVER_H
